@@ -13,10 +13,10 @@ class Song < ActiveRecord::Base
   end
   end
 
-  def find_artist
-    if self.artist != nil
-      Artist.find_by(name: self.artist.name)
-    end
-  end
-binding.pry
+#   def find_artist
+#     if self.artist != nil
+#       Artist.find_by(name: self.artist.name)
+#     end
+#   end
+# binding.pry
 end
