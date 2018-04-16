@@ -9,5 +9,10 @@ class Song < ActiveRecord::Base
     self.build_artist(name: name)
   end
 
+  def find_artist 
+    if self.artist != nil 
+      Artist.find_by(name: self.artist.name)
+    end 
+  end 
 
 end
