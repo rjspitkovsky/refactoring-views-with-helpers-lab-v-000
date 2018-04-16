@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song < ActiveRecord::Base
   belongs_to :artist
 
@@ -13,6 +15,6 @@ class Song < ActiveRecord::Base
     if self.artist != nil
       Artist.find_by(name: self.artist.name)
     end
-  end 
-
+  end
+binding.pry 
 end
