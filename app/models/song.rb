@@ -6,6 +6,6 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name=(name)
-    self.artist.build(name: name)
+    self.build_artist(name: name)
   end
 end
